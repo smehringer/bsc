@@ -1,0 +1,186 @@
+\documentclass[11pt]{article}
+
+% deutche Umlaute
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage[a4paper, left=2.5cm, right=2.5cm, top=3cm]{geometry}
+
+%\usepackage[iso,german]{isodate}
+\usepackage{fancyhdr}
+
+\title{Gliederung}
+\cfoot{hallo}
+
+\begin{document}
+\maketitle
+
+\section{Einleitung}
+\subsection{„Aktueller Stand der Forschung“}
+\begin{itemize}
+\item NGS
+\item Massen an Daten, Größe der Dateien
+\item Schwierigkeiten der Speicherung und Analyse
+\end{itemize}
+
+\subsection{Motivation/Ziel}
+\begin{itemize}
+\item Verringerung von Speicherplatz sowohl auf Dateiebene als auch (bzw. primär) für den Arbeitsspeicher
+\item Funktionalität in und zur Benutzung von SeqAn (DeltaMap)
+\end{itemize}
+
+\subsection{Zusammenfassung aller anderen Bereiche}
+\begin{itemize}
+\item Wie wurde das Ziel umgesetzt?
+\item Was kam heraus? 
+\item Bewertung der Lösung
+\item Was lässt sich noch Verbessern?
+\end{itemize}
+
+\section{Hintergrund}
+\subsection{Speicheranalyse genomischer Daten}
+\begin{itemize}
+\item Wie sieht genomische DNA grob aus
+\item Wie wird genomische DNA gespeichert (FASTA, VCF)
+\item Beispiele
+\item Ansprüche an einen Computer (bei bestimmten Algorithmen) bezogen auf Geschwindigkeit und vor allem Speicherplatz
+\end{itemize}
+
+\subsection{Lösungsansätze der Literatur: Referentielle Kompression}
+\begin{itemize}
+\item Kurz ansprechen was es sonst gibt: Lempel-Ziv...
+\item Was ist referentielle Kompression?
+\item (Was sind Delta-Events)
+\item Welchen Ansätze wurden schon nachgegangen, welche Algorithmen gibt es bereits für Kompression von Dateien?
+\item welche Algorithmen gibt es bereits die auf komprimierten Daten Algorithmen laufen lassen kann?
+\item SeqAn (Delta Map)
+\end{itemize}
+
+\section{Methoden}
+\begin{itemize}
+\item Grundidee des Algorithmus'
+\item Input, Output
+\item Defitionen: Seed, SearchField, DeltaEvent, DependantRegion, JournaledString/Entrie, DeltaMap
+\end{itemize}
+\subsection{Variant Calling}
+\subsubsection{Finde Seeds}
+\begin{itemize}
+\item Q-gram Index (1. Sequenz des Inputs, Openadressing())
+\item Jede weitere Sequenz wird gegen den Index nach Hits durchsucht -> Hit = Seed
+\item Problem: O(n) sehr langsam vor allem bei Repeats
+\item Lösung für Repeats (Definition, Einschränkung)
+\item (Lösung für Schnelligkeit im nächsten Absatz)
+\end{itemize}
+
+\subsubsection{Idee der Funktion (parallel)fastFirstSeeding()}
+\begin{itemize}
+\item Hits(Seeds) werden wenn sie gefunden werden erweitert (extend)
+\item (Maximale Seed Größe, Grenze um Chaining Problem zu beschleunigen)[vielleicht erst bei Chaining-section]
+\item Scoring dieser Seeds (nach Länge und Lage zur Hauptdiagonalen)
+\item Offset = Länge des Seeds mit besten Score
+\item Anmerkung: Parallelisierung durch Aufteilen in Abschnitte
+\end{itemize}
+
+\subsubsection{Chaining Algorithmus}
+\begin{itemize}
+\item Seeds werden zu einem aligniert
+\item kurze Beschreibung des Algorithmus'
+\item Beschleunigung durch Maximale Seed Größe
+\end{itemize}
+
+\subsubsection{Iterativer Schritt}
+\begin{itemize}
+\item fastFirstSeeding ist sehr grob
+\item um trotzdem sensitivität zu erhalten wird ein iterativer Schritt durchgeführt
+\item N's werden zugelassen was sich aber oft negativ auf die Laufzeit auswirkt -> ignorieren der N-qgramme beim seeding (sollte durch extendSeeds eh berücksichtigt werden)
+\end{itemize}
+
+\subsubsection{Überführen von Seeds in Delta Events}
+\begin{itemize}
+\item Kette von Seeds bilden ein Alignment
+\item Alignment-Repräsentation mit Delta-Events
+\item Überführung von Seeds in Delta-Events -> Manhattan Distanz
+\end{itemize}
+
+\subsection{Event Processing (on reference)}
+\begin{itemize}
+\item Prozessieren um zu komprimieren. Kurze Zusammenfassung:
+\item Zwei verschiedene Ansätze:
+\item 1. Kombinieren von gleichen Events -> "Multiples Alignment"; Anzahl von DeltaEvents wird verringert, was bei nachfolgenden Schritt besser für die Laufzeit und den Speicher ist und falls man die Records an sich speichert.
+\item 2. Änderung der Referenz Sequenz -> um Anzahl JournalEntries zu minimieren (eigentliches Ziel dieser Arbeit um Arbeitsspeicher Ansprüche zu verringern wenn nachfolgend Algorithmen angewendet werden wollen)
+\end{itemize}
+
+\subsubsection{Prä-Prozessierung der Records(DeltaEvents)}
+\begin{itemize}
+\item Sortierung der Events nach Position, Typ und Value
+\item Kombinieren von gleichen Events (Update des packed String)
+\item Gruppieren der Events zu abhängigen Regionen (Definition?, Grund/Erklärung von sonstigen Schwierigkeiten)
+\item jede abhängige Region wird dann unabhängig prozessiert
+\end{itemize}
+
+\subsubsection{Prozessierung: Scoring}
+\begin{itemize}
+\item Kurz nochmal: Was wird optimiert: JournalEntires
+\item Score = Anzahl von JournalEntries die addiert oder abgezogen werden würden FALLS das entsprechende Event in die Referenz eingebaut wird
+\item Beschreibung für das Scoring von SNP, DEL, INS, SV mit Beispielen
+\item Anmerkung: nicht optimal, da verschiedene Kombinationen von Events auf derselben Sequenz nicht beachtet werden. Wäre außerdem zu Laufzeit aufwändig.
+\end{itemize}
+
+\subsubsection{Prozessierubg: Veränderung der Referenz}
+\begin{itemize}
+\item Der beste Score (am meisten negativ) wird in die Referenz eingebaut
+\item Alle Sequenzen müssen daraufhin geupdated werden -> wie
+\item Unterscheidung zwischen abhängigen und unabhängigen Events
+\item Beschreibung der generischen Veränderung von Events mit Beispielen
+\item offset beachten
+\item Wiederholen des Scorings und der Veränderung der Referenz solange es event mit negativen Score gibt
+\end{itemize}
+
+\subsection{Überführung von prozessierten Events in eine DeltaMap}
+\begin{itemize}
+\item Wozu? -> Anwendbarkeit von Algorithmen
+\item Wie .... 
+\item Speicherformat/Ausgabeformat
+\end{itemize}
+\pagebreak
+\section{Resultate}
+\begin{itemize}
+\item auf welchem Server wurde getestet
+\item auf welchen Daten wurde getestet, wo kommen sie her und wie wurden sie eventuell prozessiert
+\end{itemize}
+
+\subsection{Laufzeit und Speicherplatz}
+\begin{itemize}
+\item auf Seeding vs. Prozessieren von Events achten
+\item Abhängigkeit von Parametern?
+\end{itemize}
+
+\subsection{Variant Calling/Seeding}
+\begin{itemize}
+\item wie viele Seeds bei wie vielen vcf-entries
+\item Event verteilung auf dem Chromosom
+\item Abhängigkeit von Parametern?
+\end{itemize}
+
+\subsection{Komprimierung}
+\begin{itemize}
+\item Anzahl Records
+\item Anzahl JournalEntries
+\item Anzahl Bytes im Arbeitsspeicher
+\end{itemize}
+
+\section{Diskussion}
+\begin{itemize}
+\item Auswertung aller Punkte in results.... was fällt auf? wie kann man das Erklären? 
+\item Bewertung...
+\end{itemize}
+
+\section{Outline}
+\begin{itemize}
+\item Zusammenfassung der Ergebnisse und Bewertungen
+\item Anwendungsmöglichkeiten
+\item Verbesserungsmöglichkeiten
+\end{itemize}
+
+
+\end{document}

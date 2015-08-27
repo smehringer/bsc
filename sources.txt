@@ -1,0 +1,22 @@
+ 
+Trend der Genomesequenzierung:  http://www.genome.gov/sequencingcosts/
+NHGRI
+Bib: Wetterstrand KA. DNA Sequencing Costs: Data from the NHGRI Genome Sequencing Program (GSP) Available at: www.genome.gov/sequencingcosts. Accessed [date of access].
+Beschreibung zum Bild: Die Grafik beschreibt die Kosten der Sequenzierung eines ganzen Genomes nach Berechnungen des NHGRI (National Human Genome Research Institute).
+    Zusätzlich zeigt die Grafik hypothetishe Daten, die das sogenannte Mooresche Gestz ('Moore's Law') reflektieren (grauer Graf). Das Mooresche Gesetz beschreibt den 
+    langzeit Trend in der Computer Hardware Industrie und besagt, dass sich die Komplexität integrierter Schaltkreise mit minimalen Komponentenkosten ca. alle zwei Jahre
+    verdoppelt. [https://de.wikipedia.org/wiki/Mooresches_Gesetz]
+    Die plötzlich einsetzende Entfernung der sinkenden Kosten vom Mooreschen Gestz im Jahr 2007 wird mit dem Übergang von Sanger-bastierten Sequenziertechniken zu 
+    'second generation' oder 'next-generation'-Technologien erklärt.
+    
+    
+Lempel und Ziv:
+@ARTICLE{Ziv77auniversal,
+    author = {Jacob Ziv and Abraham Lempel},
+    title = {A universal algorithm for sequential data compression},
+    journal = {IEEE TRANSACTIONS ON INFORMATION THEORY},
+    year = {1977},
+    volume = {23},
+    number = {3},
+    pages = {337--343}
+}

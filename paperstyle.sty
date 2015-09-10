@@ -1,0 +1,91 @@
+\usepackage[a4paper,top=2.5cm,bottom=2.5cm,left=1.5cm,right=1.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage{natbib}
+\setlength{\columnsep}{2em}
+
+\def\helvetica{\fontfamily{phv}\selectfont}
+
+% Address
+\def\address#1{ \def\@address{\footnotesize#1}}
+% E-Mail
+\def\email#1{ \def\@email{\footnotesize E-mail: \itshape#1}}
+
+\pagestyle{myheadings}
+
+\def\@maketitle{%
+  \newpage
+  \null
+  \vskip -2em%
+    {\noindent\LARGE \bfseries \@title \par}%
+    \vskip 1.5em%
+    {\large
+      %\lineskip .5em%
+        \noindent\@author
+      \par}%
+    \vskip 1em%
+  \par
+  %\vskip 1.5em
+}
+
+% Maketitle
+\let\old@maketitle\maketitle
+\renewcommand\maketitle{
+   \twocolumn[\thispagestyle{empty}
+   \begin{flushleft}
+      \global\let\@date\@empty % @date = null. 
+      {\helvetica
+       \@maketitle
+       \noindent\@address\par%
+       \noindent\@email%
+      }
+      \renewcommand\thefootnote{\old@thefootnote}%
+   \end{flushleft}
+   \vskip 1.5em]
+}
+
+% reformats abstract
+\let\old@abstract\abstract 
+\renewenvironment{abstract}{
+%   \vspace{1em} % use \topsep in list
+   {\raggedright\bfseries\helvetica\MakeUppercase\abstractname\selectfont}
+   \par\vspace{0.5em}
+   \raggedright\helvetica
+}{}
+
+\def\section{%
+  \@startsection{section}{1}{\z@}
+  {-22\p@ plus -3\p@}{3\p@}
+  {\reset@font\raggedright\helvetica\bfseries\selectfont\MakeUppercase}}
+  
+\def\subsection{%
+  \@startsection{subsection}{2}{\z@}
+  {-11\p@ plus -2\p@}{3\p@}
+  {\reset@font\raggedright\mathversion{bold}\fontseries{b}\fontsize{10}{12}\selectfont}}
+ 
+\def\subsubsection{%
+  \@startsection{subsubsection}{3}{\z@}
+  {-11\p@ plus -1\p@}{-1em}
+  {\reset@font\normalfont\normalsize\itshape}}
+
+% figure caption format
+\long\def\@makecaption#1#2{\vspace{\abovecaptionskip}%
+  \begingroup
+  \footnotesize\helvetica
+  \textbf{#1.}\enskip{#2}\par
+  \endgroup}
+
+% bibliography format
+\let\old@thebibliography\thebibliography 
+\renewenvironment{thebibliography}{%
+  \section*{\refname}%
+  \begingroup
+  \small
+  \begin{list}{}{%
+      \setlength{\topsep}{\z@}%
+      \setlength{\labelsep}{\z@}%
+  %    \settowidth{\labelwidth}{\z@}%
+      \setlength{\leftmargin}{4mm}%
+      \setlength{\itemindent}{-4mm}
+  }
+  \footnotesize
+}{\end{list}\endgroup}

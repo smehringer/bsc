@@ -1,0 +1,565 @@
+@ARTICLE{brudno03lagan,
+  author = {Michael Brudno and Chuong B Do and Gregory M Cooper and Michael F
+	Kim and Eugene Davydov and N. I. S. C. Comparative Sequencing Program
+	and Eric D Green and Arend Sidow and Serafim Batzoglou},
+  title = {{LAGAN} and {M}ulti-{LAGAN}: efficient tools for large-scale multiple
+	alignment of genomic {DNA}.},
+  journal = {Genome Res},
+  year = {2003},
+  volume = {13},
+  pages = {721--731},
+  number = {4},
+  abstract = {To compare entire genomes from different species, biologists increasingly
+	need alignment methods that are efficient enough to handle long sequences,
+	and accurate enough to correctly align the conserved biological features
+	between distant species. We present LAGAN, a system for rapid global
+	alignment of two homologous genomic sequences, and Multi-LAGAN, a
+	system for multiple global alignment of genomic sequences. We tested
+	our systems on a data set consisting of greater than 12 Mb of high-quality
+	sequence from 12 vertebrate species. All the sequence was derived
+	from the genomic region orthologous to an approximately 1.5-Mb region
+	on human chromosome 7q31.3. We found that both LAGAN and Multi-LAGAN
+	compare favorably with other leading alignment methods in correctly
+	aligning protein-coding exons, especially between distant homologs
+	such as human and chicken, or human and fugu. Multi-LAGAN produced
+	the most accurate alignments, while requiring just 75 minutes on
+	a personal computer to obtain the multiple alignment of all 12 sequences.
+	Multi-LAGAN is a practical method for generating multiple alignments
+	of long genomic sequences at any evolutionary distance. Our systems
+	are publicly available at http://lagan.stanford.edu.},
+  doi = {10.1101/gr.926603},
+  institution = {Department of Computer Science, Stanford University, Stanford, California
+	94305-9010, USA.},
+  keywords = {Animals; Base Sequence; Cattle; Chickens; Dogs; Genome; Genome, Human;
+	Humans; Mice; Molecular Sequence Data; Pan troglodytes; Papio; Rats;
+	Sequence Alignment, methods/statistics /&/ numerical data; Sequence
+	Analysis, DNA, methods; Sequence Homology, Nucleic Acid; Software,
+	statistics /&/ numerical data; Swine; Takifugu; Zebrafish},
+  language = {eng},
+  medline-pst = {ppublish},
+  owner = {bkehr},
+  pii = {GR-9266R},
+  pmid = {12654723},
+  timestamp = {2011.03.15}
+}
+
+@Article{deorowicz11fastq,
+    abstract = {{Motivation: Modern sequencing instruments are able to generate at least hundreds of millions short reads of genomic data. Those huge volumes of data require effective means to store them, provide quick access to any record and enable fast decompression.Results: We present a specialized compression algorithm for genomic data in FASTQ format which dominates its competitor, G-SQZ, as is shown on a number of datasets from the 1000 Genomes Project (www.1000genomes.org).Availability: DSRC is freely available at http://sun.aei.polsl.pl/dsrc.Contact: sebastian.deorowicz@polsl.pl}},
+    author = {Deorowicz, Sebastian and Grabowski, Szymon},
+    citeulike-article-id = {8668153},
+    citeulike-linkout-0 = {http://dx.doi.org/10.1093/bioinformatics/btr014},
+    citeulike-linkout-1 = {http://bioinformatics.oxfordjournals.org/content/early/2011/01/19/bioinformatics.btr014.abstract},
+    citeulike-linkout-2 = {http://bioinformatics.oxfordjournals.org/content/early/2011/01/19/bioinformatics.btr014.full.pdf},
+    citeulike-linkout-3 = {http://bioinformatics.oxfordjournals.org/cgi/content/abstract/27/6/860},
+    citeulike-linkout-4 = {http://view.ncbi.nlm.nih.gov/pubmed/21252073},
+    citeulike-linkout-5 = {http://www.hubmed.org/display.cgi?uids=21252073},
+    day = {19},
+    doi = {10.1093/bioinformatics/btr014},
+    issn = {1367-4811},
+    journal = {Bioinformatics},
+    keywords = {compression, data, dna, fastq, file, format, ngs, sequence},
+    month = jan,
+    number = {6},
+    pages = {860--862},
+    pmid = {21252073},
+    posted-at = {2011-03-09 14:05:13},
+    priority = {2},
+    title = {{Compression of genomic sequences in FASTQ format}},
+    url = {http://dx.doi.org/10.1093/bioinformatics/btr014},
+    volume = {27},
+    year = {2011}
+}
+
+@BOOK{gusfield97algorithms,
+author = {Dan Gusfield},
+title = {Algorithms on Strings, Trees, and Sequences},
+year = {Janurary 1997},
+OPTsubtitle = {Computer Science and Computational Biology},
+OPTlanguage = {eng},
+OPTedition = {1st edition},
+publisher = {Cambridge University Press},
+}
+
+@ARTICLE{doering08seqan,
+  author = {Andreas D\"oring and David Weese and Tobias Rausch and Knut Reinert},
+  title = {{S}eq{A}n an efficient, generic {C}++ library for sequence analysis.},
+  journal = {BMC Bioinformatics},
+  year = {2008},
+  volume = {9},
+  pages = {11},
+  __markedentry = {[bkehr]},
+  abstract = {The use of novel algorithmic techniques is pivotal to many important
+	problems in life science. For example the sequencing of the human
+	genome 1 would not have been possible without advanced assembly algorithms.
+	However, owing to the high speed of technological progress and the
+	urgent need for bioinformatics tools, there is a widening gap between
+	state-of-the-art algorithmic techniques and the actual algorithmic
+	components of tools that are in widespread use.To remedy this trend
+	we propose the use of SeqAn, a library of efficient data types and
+	algorithms for sequence analysis in computational biology. SeqAn
+	comprises implementations of existing, practical state-of-the-art
+	algorithmic components to provide a sound basis for algorithm testing
+	and development. In this paper we describe the design and content
+	of SeqAn and demonstrate its use by giving two examples. In the first
+	example we show an application of SeqAn as an experimental platform
+	by comparing different exact string matching algorithms. The second
+	example is a simple version of the well-known MUMmer tool rewritten
+	in SeqAn. Results indicate that our implementation is very efficient
+	and versatile to use.We anticipate that SeqAn greatly simplifies
+	the rapid development of new bioinformatics tools by providing a
+	collection of readily usable, well-designed algorithmic components
+	which are fundamental for the field of sequence analysis. This leverages
+	not only the implementation of new algorithms, but also enables a
+	sound analysis and comparison of existing algorithms.},
+  doi = {10.1186/1471-2105-9-11},
+  institution = {Algorithmische Bioinformatik, Institut f�r Informatik, Takustr,
+	9, 14195 Berlin, Germany. doering@inf.fu-berlin.de},
+  keywords = {Algorithms; Database Management Systems; Databases, Genetic; Programming
+	Languages; Sequence Alignment, methods; Sequence Analysis, methods;
+	Software; User-Computer Interface},
+  language = {eng},
+  medline-pst = {epublish},
+  owner = {bkehr},
+  pii = {1471-2105-9-11},
+  pmid = {18184432},
+  timestamp = {2011.03.18}
+}
+
+@ARTICLE{brudno02fast,
+pmid = {15838131},
+owner = {NLM},
+volume = {1},
+year = {2002},
+title = { Fast and sensitive alignment of large genomic sequences},
+pages = {138-47},
+abstract ={},
+author = {Michael Brudno and Burkhard Morgenstern},
+institution = {Computer Science Department, Stanford University, Stanford, CA 94305, USA. brudno@CS.Stanford.EDU},
+language = {eng},
+journal = {Proc IEEE Comput Soc Bioinform Conf},
+timestamp = {2005.04.20},
+medline-pst = {ppublish}
+}
+
+@online{mason10,
+author = {M. Holtgrewe},
+title = {Mason – a read simulator for second generation sequencing data},
+year = {2010},
+url = {https://www.seqan.de/projects/mason/},
+organization = {Institut für Mathematik und Informatik, Freie Universität Berlin}
+}
+
+@article{deorowicz13info,
+    abstract = {},
+    author = {Deorowicz, Sebastian and Grabowski, Szymon},
+    citeulike-article-id = {12798468},
+    citeulike-linkout-0 = {http://dx.doi.org/10.1186/1748-7188-8-25},
+    citeulike-linkout-1 = {http://view.ncbi.nlm.nih.gov/pubmed/24252160},
+    citeulike-linkout-2 = {http://www.hubmed.org/display.cgi?uids=24252160},
+    day = {19},
+    doi = {10.1186/1748-7188-8-25},
+    issn = {1748-7188},
+    journal = {Algorithms for Molecular Biology},
+    keywords = {compression, data, ngs, sequencing},
+    month = nov,
+    number = {1},
+    pages = {25+},
+    pmid = {24252160},
+    posted-at = {2013-11-29 17:27:59},
+    priority = {2},
+    title = {{Data compression for sequencing data}},
+    url = {http://dx.doi.org/10.1186/1748-7188-8-25},
+    volume = {8},
+    year = {2013}
+}
+
+@article{pinho12Green,
+    abstract = {},
+    author = {Pinho, Armando J. and Pratas, Diogo and Garcia, Sara P.},
+    citeulike-article-id = {10107837},
+    citeulike-linkout-0 = {http://dx.doi.org/10.1093/nar/gkr1124},
+    citeulike-linkout-1 = {http://nar.oxfordjournals.org/content/early/2011/12/01/nar.gkr1124.abstract},
+    citeulike-linkout-2 = {http://nar.oxfordjournals.org/content/early/2011/12/01/nar.gkr1124.full.pdf},
+    citeulike-linkout-3 = {http://nar.oxfordjournals.org/cgi/content/abstract/40/4/e27},
+    citeulike-linkout-4 = {http://view.ncbi.nlm.nih.gov/pubmed/22139935},
+    citeulike-linkout-5 = {http://www.hubmed.org/display.cgi?uids=22139935},
+    day = {1},
+    doi = {10.1093/nar/gkr1124},
+    issn = {1362-4962},
+    journal = {Nucleic Acids Research},
+    keywords = {compression},
+    month = feb,
+    number = {4},
+    pages = {e27},
+    pmid = {22139935},
+    posted-at = {2011-12-14 19:46:01},
+    priority = {5},
+    publisher = {Oxford University Press},
+    title = {{GReEn: a tool for efficient compression of genome resequencing data}},
+    url = {http://dx.doi.org/10.1093/nar/gkr1124},
+    volume = {40},
+    year = {2012}
+}
+
+@article{loh12compressivegenomics,
+    author = {Loh, Po-Ru and Baym, Michael and Berger, Bonnie},
+    citeulike-article-id = {10874496},
+    citeulike-linkout-0 = {http://dx.doi.org/10.1038/nbt.2241},
+    citeulike-linkout-1 = {http://dx.doi.org/10.1038/nbt.2241},
+    citeulike-linkout-2 = {http://view.ncbi.nlm.nih.gov/pubmed/22781691},
+    citeulike-linkout-3 = {http://www.hubmed.org/display.cgi?uids=22781691},
+    day = {10},
+    doi = {10.1038/nbt.2241},
+    issn = {1087-0156},
+    journal = {Nature Biotechnology},
+    keywords = {genomics, review},
+    month = jul,
+    number = {7},
+    pages = {627--630},
+    pmid = {22781691},
+    posted-at = {2012-07-15 01:26:53},
+    priority = {4},
+    publisher = {Nature Publishing Group},
+    title = {{Compressive genomics}},
+    url = {http://dx.doi.org/10.1038/nbt.2241},
+    volume = {30},
+    year = {2012}
+}
+
+@article{christley09email,
+    abstract = {},
+    author = {Christley, Scott and Lu, Yiming and Li, Chen and Xie, Xiaohui},
+    citeulike-article-id = {3508436},
+    citeulike-linkout-0 = {http://dx.doi.org/10.1093/bioinformatics/btn582},
+    citeulike-linkout-1 = {http://bioinformatics.oxfordjournals.org/content/25/2/274.abstract},
+    citeulike-linkout-2 = {http://bioinformatics.oxfordjournals.org/content/25/2/274.full.pdf},
+    citeulike-linkout-3 = {http://bioinformatics.oxfordjournals.org/cgi/content/abstract/25/2/274},
+    citeulike-linkout-4 = {http://view.ncbi.nlm.nih.gov/pubmed/18996942},
+    citeulike-linkout-5 = {http://www.hubmed.org/display.cgi?uids=18996942},
+    day = {15},
+    doi = {10.1093/bioinformatics/btn582},
+    issn = {1460-2059},
+    journal = {Bioinformatics},
+    keywords = {attachment, compression, email, genome, human, sequence},
+    month = jan,
+    number = {2},
+    pages = {274--275},
+    pmid = {18996942},
+    posted-at = {2009-01-15 16:14:42},
+    priority = {2},
+    publisher = {Oxford University Press},
+    title = {{Human genomes as email attachments}},
+    url = {http://dx.doi.org/10.1093/bioinformatics/btn582},
+    volume = {25},
+    year = {2009}
+}
+
+@article{Rahn15072014,
+author = {Rahn, René and Weese, David and Reinert, Knut}, 
+title = {Journaled String Tree - A scalable data structure for analyzing thousands of similar genomes on your laptop},
+year = {2014}, 
+doi = {10.1093/bioinformatics/btu438}, 
+abstract ={Motivation: Next generation sequencing (NGS) has revolutionized biomedical research in the last decade and led to a continues stream of developments in bioinformatics addressing the need for fast and space efficient solutions for analyzing NGS data. Often researchers need to analyze a set of genomic sequences which stem from closely related species or are indeed individuals of the same species. Hence the analyzed sequences are very similar. For analyses where local changes in the examined sequence induce only local changes in the results it is obviously desirable to examine identical or similar regions not repeatedly.Results: In this work we provide a datatype which exploits data parallelism inherent in a set of similar sequences by analyzing shared regions only once. In real-world experiments we show that algorithms which otherwise would scan each reference sequentially can be speeded up by a factor of 115.Availability: Availability: The data structure and associated tools are publicly available at http://www.seqan.de/projects/jst and are part of SeqAn, the C++ template library for sequence analysis.Contact: rene.rahn@fu-berlin.de, knut.reinert@fu-berlin.de}, 
+URL = {http://bioinformatics.oxfordjournals.org/content/early/2014/07/15/bioinformatics.btu438.abstract}, 
+eprint = {http://bioinformatics.oxfordjournals.org/content/early/2014/07/15/bioinformatics.btu438.full.pdf+html}, 
+journal = {Bioinformatics} 
+}
+
+@article{wandelt:ABRC,
+    abstract = {},
+    author = {Wandelt, Sebastian and Leser, Ulf},
+    citeulike-article-id = {11681417},
+    citeulike-linkout-0 = {http://dx.doi.org/10.1186/1748-7188-7-30},
+    doi = {10.1186/1748-7188-7-30},
+    issn = {1748-7188},
+    journal = {Algorithms for Molecular Biology},
+    keywords = {ngs},
+    number = {1},
+    pages = {30+},
+    posted-at = {2012-11-13 07:26:09},
+    priority = {2},
+    title = {{Adaptive efficient compression of genomes}},
+    url = {http://dx.doi.org/10.1186/1748-7188-7-30},
+    volume = {7},
+    year = {2012}
+}
+
+@article{wang11GRS,
+    abstract = {},
+    author = {Wang, Congmao and Zhang, Dabing},
+    citeulike-article-id = {8695669},
+    citeulike-linkout-0 = {http://dx.doi.org/10.1093/nar/gkr009},
+    citeulike-linkout-1 = {http://nar.oxfordjournals.org/content/early/2011/01/25/nar.gkr009.abstract},
+    citeulike-linkout-2 = {http://nar.oxfordjournals.org/content/early/2011/01/25/nar.gkr009.full.pdf},
+    citeulike-linkout-3 = {http://nar.oxfordjournals.org/cgi/content/abstract/39/7/e45},
+    citeulike-linkout-4 = {http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3074166/},
+    citeulike-linkout-5 = {http://view.ncbi.nlm.nih.gov/pubmed/21266471},
+    citeulike-linkout-6 = {http://www.hubmed.org/display.cgi?uids=21266471},
+    day = {1},
+    doi = {10.1093/nar/gkr009},
+    issn = {1362-4962},
+    journal = {Nucleic Acids Research},
+    keywords = {compression, data, genome, resequencing, software, storage, tool},
+    month = apr,
+    number = {7},
+    pages = {e45},
+    pmcid = {PMC3074166},
+    pmid = {21266471},
+    posted-at = {2011-01-28 18:54:08},
+    priority = {2},
+    title = {{A novel compression tool for efficient storage of genome resequencing data}},
+    url = {http://dx.doi.org/10.1093/nar/gkr009},
+    volume = {39},
+    year = {2011}
+}
+
+
+ @article{wandelt14trends,
+ title = {Trends in Genome Compression},
+ journal = {Current Bioinformatics},
+ volume = {9},
+ number = {3},
+ pages = {315-326},
+ year = {2014},
+ ISSN = {1574-8936/2212-392X},
+ DOI = {10.2174/1574893609666140516010143},
+ URL = {http://www.eurekaselect.com/node/122208/article},
+ author = {Wandelt, Sebastian and Bux, Marc and Leser, Ulf},
+ keywords = {Genome compression, read compression, survey}
+ }
+ 
+ @article{1000genomes,
+   abstract = {},
+   author = {The 1000 Genomes Project Consortium},
+   citeulike-article-id = {11593055},
+   citeulike-linkout-0 = {http://dx.doi.org/10.1038/nature11632},
+   citeulike-linkout-1 = {http://dx.doi.org/10.1038/nature11632},
+   citeulike-linkout-2 = {http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3498066/},
+   citeulike-linkout-3 = {http://view.ncbi.nlm.nih.gov/pubmed/23128226},
+   citeulike-linkout-4 = {http://www.hubmed.org/display.cgi?uids=23128226},
+   day = {31},
+   doi = {10.1038/nature11632},
+   issn = {0028-0836},
+   journal = {Nature},
+   keywords = {1000\_genomes, genetics, population, population\_genetics, population\_structure, snp},
+   month = oct,
+   number = {7422},
+   pages = {56--65},
+   pmcid = {PMC3498066},
+   pmid = {23128226},
+   posted-at = {2012-12-08 22:55:45},
+   priority = {2},
+   publisher = {Nature Publishing Group},
+   title = {{An integrated map of genetic variation from 1,092 human genomes}},
+   url = {http://dx.doi.org/10.1038/nature11632},
+   volume = {491},
+   year = {2012}
+}
+
+@TechReport{sequencingCosts,
+author = {NHGRI},
+title = {DNA Sequencing Costs: Data from the NHGRI Genome Sequencing Program (GSP)},
+institution = {National Human Genome Research Institute},
+year = {2015},
+OPTkey = {•},
+OPTtype = {•},
+OPTnumber = {•},
+OPTaddress = {Wetterstrand KA},
+OPTmonth = {June},
+OPTnote = {•},
+OPTannote = {•}
+}
+
+@Article{rani14new,
+author = {Rani, M Mary Shanthi},
+title = {a new referential method for compressing Genomes},
+journal = {International Journal of Computational Bioinformatics},
+year = {2015},
+OPTkey = {•},
+OPTvolume = {4},
+OPTnumber = {1},
+OPTpages = {592--596},
+OPTmonth = {Jan},
+OPTnote = {•},
+OPTannote = {•}
+}
+
+@Article{Ziv77auniversal,
+    author = {Jacob Ziv and Abraham Lempel},
+    title = {A universal algorithm for sequential data compression},
+    journal = {IEEE TRANSACTIONS ON INFORMATION THEORY},
+    year = {1977},
+    volume = {23},
+    number = {3},
+    pages = {337--343}
+}
+
+@misc{software:gzip,
+    author = {Jean},
+    citeulike-article-id = {4804544},
+    citeulike-linkout-0 = {http://www.gzip.org/},
+    howpublished = {Programa de computador},
+    posted-at = {2009-06-11 00:49:02},
+    priority = {0},
+    title = {{gzip}},
+    url = {http://www.gzip.org/},
+    year = {1992}
+}
+
+@article{huffman,
+    abstract = {},
+    author = {Huffman, David},
+    citeulike-article-id = {7223584},
+    citeulike-linkout-0 = {http://dx.doi.org/10.1007/bf02837279},
+    citeulike-linkout-1 = {http://www.springerlink.com/content/06x3u65887922375},
+    day = {1},
+    doi = {10.1007/bf02837279},
+    issn = {0971-8044},
+    journal = {Resonance},
+    keywords = {huffman},
+    month = feb,
+    number = {2},
+    pages = {91--99},
+    posted-at = {2010-05-27 19:47:36},
+    priority = {2},
+    title = {{A method for the construction of minimum-redundancy codes}},
+    url = {http://dx.doi.org/10.1007/bf02837279},
+    volume = {11},
+    year = {2006}
+}
+
+@article{Venter16022001,
+author = {Venter, J and others}, 
+title = {The Sequence of the Human Genome},
+volume = {291}, 
+number = {5507}, 
+pages = {1304-1351}, 
+year = {2001}, 
+doi = {10.1126/science.1058040}, 
+abstract ={}, 
+URL = {http://www.sciencemag.org/content/291/5507/1304.abstract}, 
+eprint = {http://www.sciencemag.org/content/291/5507/1304.full.pdf}, 
+journal = {Science} 
+}
+
+@article{deorowicz13TDC,
+    abstract = {},
+    author = {Deorowicz, Sebastian and Danek, Agnieszka and Grabowski, Szymon},
+    day = {15},
+    doi = {10.1093/bioinformatics/btt460},
+    issn = {1460-2059},
+    journal = {Bioinformatics},
+    keywords = {1000geneomes, compression, genomics, uk10k},
+    month = {oct},
+    number = {20},
+    pages = {2572--2578},
+    pmid = {23969136},
+    posted-at = {2013-09-12 11:46:29},
+    priority = {2},
+    publisher = {Oxford University Press},
+    title = {{Genome compression: a novel approach for large collections}},
+    url = {http://dx.doi.org/10.1093/bioinformatics/btt460},
+    volume = {29},
+    year = {2013}
+}
+
+@inproceedings{Kuruppu:RLZ,
+ author = {Kuruppu, Shanika and Puglisi, Simon J. and Zobel, Justin},
+ title = {Optimized Relative Lempel-Ziv Compression of Genomes},
+ booktitle = {Proceedings of the Thirty-Fourth Australasian Computer Science Conference - Volume 113},
+ series = {ACSC '11},
+ year = {2011},
+ isbn = {978-1-920682-93-4},
+ location = {Perth, Australia},
+ pages = {91--98},
+ numpages = {8},
+ url = {http://dl.acm.org/citation.cfm?id=2459296.2459307},
+ acmid = {2459307},
+ publisher = {Australian Computer Society, Inc.},
+ address = {Darlinghurst, Australia, Australia},
+ keywords = {DNA, LZ77, Lempel-Ziv, compression, subsequence matching, suffix array},
+}
+
+@article{deoriwicz:GDC,
+    abstract = {},
+    author = {Deorowicz, Sebastian and Grabowski, Szymon},
+    citeulike-article-id = {9743484},
+    citeulike-linkout-0 = {http://dx.doi.org/10.1093/bioinformatics/btr505},
+    citeulike-linkout-1 = {http://bioinformatics.oxfordjournals.org/content/early/2011/09/05/bioinformatics.btr505.abstract},
+    citeulike-linkout-2 = {http://bioinformatics.oxfordjournals.org/content/early/2011/09/05/bioinformatics.btr505.full.pdf},
+    citeulike-linkout-3 = {http://bioinformatics.oxfordjournals.org/cgi/content/abstract/27/21/2979},
+    citeulike-linkout-4 = {http://view.ncbi.nlm.nih.gov/pubmed/21896510},
+    citeulike-linkout-5 = {http://www.hubmed.org/display.cgi?uids=21896510},
+    day = {1},
+    doi = {10.1093/bioinformatics/btr505},
+    issn = {1367-4811},
+    journal = {Bioinformatics},
+    keywords = {ngs, storage},
+    month = nov,
+    number = {21},
+    pages = {2979--2986},
+    pmid = {21896510},
+    posted-at = {2011-09-06 08:46:23},
+    priority = {2},
+    title = {{Robust relative compression of genomes with random access}},
+    url = {http://dx.doi.org/10.1093/bioinformatics/btr505},
+    volume = {27},
+    year = {2011}
+}
+
+@Article{deoriwicz:GDC2,
+author = {Deorowicz, Sebastian and Danek, Agnieszka and Niemiec, Marcin},
+title = {GDC 2: Compression of large collections of genomes},
+journal = {Cornell University Library arXiv:1503.01624},
+year = {2015},
+OPTkey = {•},
+OPTvolume = {5},
+OPTnumber = {•},
+OPTpages = {•},
+OPTmonth = {jun},
+OPTnote = {•},
+OPTannote = {•}
+}
+
+@incollection{kuruppu:refseq,
+year={2011},
+isbn={978-3-642-24582-4},
+booktitle={String Processing and Information Retrieval},
+volume={7024},
+series={Lecture Notes in Computer Science},
+editor={Grossi, Roberto and Sebastiani, Fabrizio and Silvestri, Fabrizio},
+doi={10.1007/978-3-642-24583-1_41},
+title={Reference Sequence Construction for Relative Compression of Genomes},
+url={http://dx.doi.org/10.1007/978-3-642-24583-1_41},
+publisher={Springer Berlin Heidelberg},
+author={Kuruppu, Shanika and Puglisi, SimonJ. and Zobel, Justin},
+pages={420-425},
+language={English}
+}
+
+@article{GATK:variantcalling,
+    abstract = {},
+    author = {Van der Auwera, Geraldine A. and Carneiro, Mauricio O. and Hartl, Christopher and Poplin, Ryan and del Angel, Guillermo and Levy-Moonshine, Ami and Jordan, Tadeusz and Shakir, Khalid and Roazen, David and Thibault, Joel and Banks, Eric and Garimella, Kiran V. and Altshuler, David and Gabriel, Stacey and DePristo, Mark A.},
+    booktitle = {Current Protocols in Bioinformatics},
+    citeulike-article-id = {12735220},
+    citeulike-linkout-0 = {http://dx.doi.org/10.1002/0471250953.bi1110s43},
+    citeulike-linkout-1 = {http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4243306/},
+    citeulike-linkout-2 = {http://view.ncbi.nlm.nih.gov/pubmed/25431634},
+    citeulike-linkout-3 = {http://www.hubmed.org/display.cgi?uids=25431634},
+    day = {15},
+    doi = {10.1002/0471250953.bi1110s43},
+    issn = {1934-340X},
+    journal = {Current protocols in bioinformatics / editoral board, Andreas D. Baxevanis ... [et al.]},
+    keywords = {gatk},
+    month = oct,
+    number = {1110},
+    pmcid = {PMC4243306},
+    pmid = {25431634},
+    posted-at = {2013-12-11 16:33:26},
+    priority = {2},
+    publisher = {John Wiley \& Sons, Inc.},
+    title = {{From FastQ Data to High-Confidence Variant Calls: The Genome Analysis Toolkit Best Practices Pipeline}},
+    url = {http://dx.doi.org/10.1002/0471250953.bi1110s43},
+    volume = {11},
+    year = {2002}
+}

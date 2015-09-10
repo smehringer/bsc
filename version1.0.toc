@@ -1,0 +1,23 @@
+\contentsline {section}{\numberline {1}Zusammenfassung}{3}
+\contentsline {section}{\numberline {2}Einleitung}{4}
+\contentsline {subsection}{\numberline {2.1}Hintergrund}{4}
+\contentsline {subsection}{\numberline {2.2}Motivation}{8}
+\contentsline {section}{\numberline {3}Methoden}{9}
+\contentsline {subsection}{\numberline {3.1}Definitionen und allgemeine Notation}{9}
+\contentsline {subsection}{\numberline {3.2}Konzept}{10}
+\contentsline {subsection}{\numberline {3.3}Implementierung - "Variant Calling"}{12}
+\contentsline {subsubsection}{\numberline {3.3.1}Indexsuche}{12}
+\contentsline {subsubsection}{\numberline {3.3.2}Verbesserung der Suche}{12}
+\contentsline {subsubsection}{\numberline {3.3.3}Reduktion zu einer globalen Kette}{14}
+\contentsline {subsubsection}{\numberline {3.3.4}Generierung von $\Delta $-Events}{14}
+\contentsline {subsection}{\numberline {3.4}Implementierung - Verbesserung der Kompression}{15}
+\contentsline {subsubsection}{\numberline {3.4.1}Zusammenf\IeC {\"u}hrung von Events}{16}
+\contentsline {subsubsection}{\numberline {3.4.2}Pr\IeC {\"a}prozessierung}{16}
+\contentsline {subsubsection}{\numberline {3.4.3}Prozessierung}{16}
+\contentsline {subsubsection}{\numberline {3.4.4}Scoring - Konzept der Referenz\IeC {\"a}nderung}{17}
+\contentsline {subsubsection}{\numberline {3.4.5}Endddatenstruktur}{18}
+\contentsline {section}{\numberline {4}Ergebnisse}{19}
+\contentsline {subsection}{\numberline {4.1}Evaluation der Indexsuche}{19}
+\contentsline {subsection}{\numberline {4.2}Leistung beim menschlichen Chromosoms 21}{20}
+\contentsline {subsection}{\numberline {4.3}Leistung bei E.Coli Genomen}{22}
+\contentsline {section}{\numberline {5}Disskusion und Fazit}{22}

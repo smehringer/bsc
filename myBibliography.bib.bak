@@ -1,7 +1,5 @@
 @ARTICLE{brudno03lagan,
-  author = {Michael Brudno and Chuong B Do and Gregory M Cooper and Michael F
-	Kim and Eugene Davydov and N. I. S. C. Comparative Sequencing Program
-	and Eric D Green and Arend Sidow and Serafim Batzoglou},
+  author = {Michael Brudno and others},
   title = {{LAGAN} and {M}ulti-{LAGAN}: efficient tools for large-scale multiple
 	alignment of genomic {DNA}.},
   journal = {Genome Res},
@@ -539,7 +537,7 @@ language={English}
 
 @article{GATK:variantcalling,
     abstract = {},
-    author = {Van der Auwera, Geraldine A. and Carneiro, Mauricio O. and Hartl, Christopher and Poplin, Ryan and del Angel, Guillermo and Levy-Moonshine, Ami and Jordan, Tadeusz and Shakir, Khalid and Roazen, David and Thibault, Joel and Banks, Eric and Garimella, Kiran V. and Altshuler, David and Gabriel, Stacey and DePristo, Mark A.},
+    author = {Van der Auwera, Geraldine A. and others},
     booktitle = {Current Protocols in Bioinformatics},
     citeulike-article-id = {12735220},
     citeulike-linkout-0 = {http://dx.doi.org/10.1002/0471250953.bi1110s43},
@@ -562,4 +560,29 @@ language={English}
     url = {http://dx.doi.org/10.1002/0471250953.bi1110s43},
     volume = {11},
     year = {2002}
+}
+
+@Misc{DATA:ecoli,
+OPTkey = {•},
+author = {PortEco},
+title = {EcoliWiki},
+OPThowpublished = {•},
+month = {July},
+year = {2010},
+note = {\tiny\verb|http://ecoliwiki.net/colipedia/index.php/Sequenced_E._coli_Genomeshello|\normalsize},
+OPTannote = {•}
+}
+
+@Article{INFO:snp_variation,
+author = {Ananyo Choudhury and others},
+title = {Population-specific common SNPs reflect demographic histories and highlight regions of genomic plasticity with functional relevance},
+journal = {BMC Genomics},
+year = {2014},
+OPTkey = {•},
+OPTvolume = {15},
+OPTnumber = {437},
+OPTpages = {},
+OPTmonth = {June},
+OPTnote = {•},
+OPTannote = {•}
 }

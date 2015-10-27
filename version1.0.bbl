@@ -1,142 +1,144 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{}
 
-\bibitem{brudno03lagan}
-{\sc Brudno, M., Do, C.~B., Cooper, G.~M., Kim, M.~F., Davydov, E., Program, N.
-  I. S. C. C.~S., Green, E.~D., Sidow, A., and Batzoglou, S.}
+\bibitem[Brudno et~al., 2003]{brudno03lagan}
+Brudno, M. et~al. (2003).
 \newblock {LAGAN} and {M}ulti-{LAGAN}: efficient tools for large-scale multiple
   alignment of genomic {DNA}.
-\newblock {\em Genome Res 13}, 4 (2003), 721--731.
+\newblock {\em Genome Res}, 13(4):721--731.
 
-\bibitem{christley09email}
-{\sc Christley, S., Lu, Y., Li, C., and Xie, X.}
+\bibitem[Choudhury et~al., 2014]{INFO:snp_variation}
+Choudhury, A. et~al. (2014).
+\newblock Population-specific common snps reflect demographic histories and
+  highlight regions of genomic plasticity with functional relevance.
+\newblock {\em BMC Genomics}.
+
+\bibitem[Christley et~al., 2009]{christley09email}
+Christley, S., Lu, Y., Li, C., and Xie, X. (2009).
 \newblock {Human genomes as email attachments}.
-\newblock {\em Bioinformatics 25}, 2 (Jan. 2009), 274--275.
+\newblock {\em Bioinformatics}, 25(2):274--275.
 
-\bibitem{1000genomes}
-{\sc Consortium, T. . G.~P.}
+\bibitem[Consortium, 2012]{1000genomes}
+Consortium, T. . G.~P. (2012).
 \newblock {An integrated map of genetic variation from 1,092 human genomes}.
-\newblock {\em Nature 491}, 7422 (Oct. 2012), 56--65.
+\newblock {\em Nature}, 491(7422):56--65.
 
-\bibitem{deorowicz13TDC}
-{\sc Deorowicz, S., Danek, A., and Grabowski, S.}
+\bibitem[Deorowicz et~al., 2013]{deorowicz13TDC}
+Deorowicz, S., Danek, A., and Grabowski, S. (2013).
 \newblock {Genome compression: a novel approach for large collections}.
-\newblock {\em Bioinformatics 29}, 20 (oct 2013), 2572--2578.
+\newblock {\em Bioinformatics}, 29(20):2572--2578.
 
-\bibitem{deoriwicz:GDC2}
-{\sc Deorowicz, S., Danek, A., and Niemiec, M.}
+\bibitem[Deorowicz et~al., 2015]{deoriwicz:GDC2}
+Deorowicz, S., Danek, A., and Niemiec, M. (2015).
 \newblock Gdc 2: Compression of large collections of genomes.
-\newblock {\em Cornell University Library arXiv:1503.01624\/} (2015).
+\newblock {\em Cornell University Library arXiv:1503.01624}.
 
-\bibitem{deorowicz11fastq}
-{\sc Deorowicz, S., and Grabowski, S.}
+\bibitem[Deorowicz and Grabowski, 2011a]{deorowicz11fastq}
+Deorowicz, S. and Grabowski, S. (2011a).
 \newblock {Compression of genomic sequences in FASTQ format}.
-\newblock {\em Bioinformatics 27}, 6 (Jan. 2011), 860--862.
+\newblock {\em Bioinformatics}, 27(6):860--862.
 
-\bibitem{deoriwicz:GDC}
-{\sc Deorowicz, S., and Grabowski, S.}
+\bibitem[Deorowicz and Grabowski, 2011b]{deoriwicz:GDC}
+Deorowicz, S. and Grabowski, S. (2011b).
 \newblock {Robust relative compression of genomes with random access}.
-\newblock {\em Bioinformatics 27}, 21 (Nov. 2011), 2979--2986.
+\newblock {\em Bioinformatics}, 27(21):2979--2986.
 
-\bibitem{deorowicz13info}
-{\sc Deorowicz, S., and Grabowski, S.}
+\bibitem[Deorowicz and Grabowski, 2013]{deorowicz13info}
+Deorowicz, S. and Grabowski, S. (2013).
 \newblock {Data compression for sequencing data}.
-\newblock {\em Algorithms for Molecular Biology 8}, 1 (Nov. 2013), 25+.
+\newblock {\em Algorithms for Molecular Biology}, 8(1):25+.
 
-\bibitem{doering08seqan}
-{\sc D\"oring, A., Weese, D., Rausch, T., and Reinert, K.}
+\bibitem[D\"oring et~al., 2008]{doering08seqan}
+D\"oring, A., Weese, D., Rausch, T., and Reinert, K. (2008).
 \newblock {S}eq{A}n an efficient, generic {C}++ library for sequence analysis.
-\newblock {\em BMC Bioinformatics 9\/} (2008), 11.
+\newblock {\em BMC Bioinformatics}, 9:11.
 
-\bibitem{gusfield97algorithms}
-{\sc Gusfield, D.}
+\bibitem[Gusfield, 1997]{gusfield97algorithms}
+Gusfield, D. (Janurary 1997).
 \newblock {\em Algorithms on Strings, Trees, and Sequences}.
-\newblock Cambridge University Press, Janurary 1997.
+\newblock Cambridge University Press.
 
-\bibitem{huffman}
-{\sc Huffman, D.}
+\bibitem[Huffman, 2006]{huffman}
+Huffman, D. (2006).
 \newblock {A method for the construction of minimum-redundancy codes}.
-\newblock {\em Resonance 11}, 2 (Feb. 2006), 91--99.
+\newblock {\em Resonance}, 11(2):91--99.
 
-\bibitem{software:gzip}
-{\sc Jean}.
+\bibitem[Jean, 1992]{software:gzip}
+Jean (1992).
 \newblock {gzip}.
-\newblock Programa de computador, 1992.
+\newblock Programa de computador.
 
-\bibitem{kuruppu:refseq}
-{\sc Kuruppu, S., Puglisi, S., and Zobel, J.}
+\bibitem[Kuruppu et~al., 2011a]{kuruppu:refseq}
+Kuruppu, S., Puglisi, S., and Zobel, J. (2011a).
 \newblock Reference sequence construction for relative compression of genomes.
-\newblock In {\em String Processing and Information Retrieval}, R.~Grossi,
-  F.~Sebastiani, and F.~Silvestri, Eds., vol.~7024 of {\em Lecture Notes in
-  Computer Science}. Springer Berlin Heidelberg, 2011, pp.~420--425.
+\newblock In Grossi, R., Sebastiani, F., and Silvestri, F., editors, {\em
+  String Processing and Information Retrieval}, volume 7024 of {\em Lecture
+  Notes in Computer Science}, pages 420--425. Springer Berlin Heidelberg.
 
-\bibitem{Kuruppu:RLZ}
-{\sc Kuruppu, S., Puglisi, S.~J., and Zobel, J.}
+\bibitem[Kuruppu et~al., 2011b]{Kuruppu:RLZ}
+Kuruppu, S., Puglisi, S.~J., and Zobel, J. (2011b).
 \newblock Optimized relative lempel-ziv compression of genomes.
 \newblock In {\em Proceedings of the Thirty-Fourth Australasian Computer
-  Science Conference - Volume 113\/} (Darlinghurst, Australia, Australia,
-  2011), ACSC '11, Australian Computer Society, Inc., pp.~91--98.
+  Science Conference - Volume 113}, ACSC '11, pages 91--98, Darlinghurst,
+  Australia, Australia. Australian Computer Society, Inc.
 
-\bibitem{loh12compressivegenomics}
-{\sc Loh, P.-R., Baym, M., and Berger, B.}
+\bibitem[Loh et~al., 2012]{loh12compressivegenomics}
+Loh, P.-R., Baym, M., and Berger, B. (2012).
 \newblock {Compressive genomics}.
-\newblock {\em Nature Biotechnology 30}, 7 (July 2012), 627--630.
+\newblock {\em Nature Biotechnology}, 30(7):627--630.
 
-\bibitem{sequencingCosts}
-{\sc NHGRI}.
+\bibitem[NHGRI, 2015]{sequencingCosts}
+NHGRI (2015).
 \newblock Dna sequencing costs: Data from the nhgri genome sequencing program
   (gsp).
-\newblock Tech. rep., National Human Genome Research Institute, 2015.
+\newblock Technical report, National Human Genome Research Institute.
 
-\bibitem{pinho12Green}
-{\sc Pinho, A.~J., Pratas, D., and Garcia, S.~P.}
+\bibitem[Pinho et~al., 2012]{pinho12Green}
+Pinho, A.~J., Pratas, D., and Garcia, S.~P. (2012).
 \newblock {GReEn: a tool for efficient compression of genome resequencing
   data}.
-\newblock {\em Nucleic Acids Research 40}, 4 (Feb. 2012), e27.
+\newblock {\em Nucleic Acids Research}, 40(4):e27.
 
-\bibitem{Rahn15072014}
-{\sc Rahn, R., Weese, D., and Reinert, K.}
+\bibitem[PortEco, 2010]{DATA:ecoli}
+PortEco (2010).
+\newblock Ecoliwiki.
+\newblock
+  \tiny\verb|http://ecoliwiki.net/colipedia/index.php/Sequenced_E._coli_Genomeshello|\normalsize.
+
+\bibitem[Rahn et~al., 2014]{Rahn15072014}
+Rahn, R., Weese, D., and Reinert, K. (2014).
 \newblock Journaled string tree - a scalable data structure for analyzing
   thousands of similar genomes on your laptop.
-\newblock {\em Bioinformatics\/} (2014).
+\newblock {\em Bioinformatics}.
 
-\bibitem{rani14new}
-{\sc Rani, M. M.~S.}
+\bibitem[Rani, 2015]{rani14new}
+Rani, M. M.~S. (2015).
 \newblock a new referential method for compressing genomes.
-\newblock {\em International Journal of Computational Bioinformatics\/} (2015).
+\newblock {\em International Journal of Computational Bioinformatics}.
 
-\bibitem{GATK:variantcalling}
-{\sc Van~der Auwera, G.~A., Carneiro, M.~O., Hartl, C., Poplin, R., del Angel,
-  G., Levy-Moonshine, A., Jordan, T., Shakir, K., Roazen, D., Thibault, J.,
-  Banks, E., Garimella, K.~V., Altshuler, D., Gabriel, S., and DePristo, M.~A.}
-\newblock {From FastQ Data to High-Confidence Variant Calls: The Genome
-  Analysis Toolkit Best Practices Pipeline}.
-\newblock {\em Current protocols in bioinformatics / editoral board, Andreas D.
-  Baxevanis ... [et al.] 11}, 1110 (Oct. 2002).
-
-\bibitem{Venter16022001}
-{\sc Venter, J., et~al.}
+\bibitem[Venter et~al., 2001]{Venter16022001}
+Venter, J. et~al. (2001).
 \newblock The sequence of the human genome.
-\newblock {\em Science 291}, 5507 (2001), 1304--1351.
+\newblock {\em Science}, 291(5507):1304--1351.
 
-\bibitem{wandelt14trends}
-{\sc Wandelt, S., Bux, M., and Leser, U.}
+\bibitem[Wandelt et~al., 2014]{wandelt14trends}
+Wandelt, S., Bux, M., and Leser, U. (2014).
 \newblock Trends in genome compression.
-\newblock {\em Current Bioinformatics 9}, 3 (2014), 315--326.
+\newblock {\em Current Bioinformatics}, 9(3):315--326.
 
-\bibitem{wandelt:ABRC}
-{\sc Wandelt, S., and Leser, U.}
+\bibitem[Wandelt and Leser, 2012]{wandelt:ABRC}
+Wandelt, S. and Leser, U. (2012).
 \newblock {Adaptive efficient compression of genomes}.
-\newblock {\em Algorithms for Molecular Biology 7}, 1 (2012), 30+.
+\newblock {\em Algorithms for Molecular Biology}, 7(1):30+.
 
-\bibitem{wang11GRS}
-{\sc Wang, C., and Zhang, D.}
+\bibitem[Wang and Zhang, 2011]{wang11GRS}
+Wang, C. and Zhang, D. (2011).
 \newblock {A novel compression tool for efficient storage of genome
   resequencing data}.
-\newblock {\em Nucleic Acids Research 39}, 7 (Apr. 2011), e45.
+\newblock {\em Nucleic Acids Research}, 39(7):e45.
 
-\bibitem{Ziv77auniversal}
-{\sc Ziv, J., and Lempel, A.}
+\bibitem[Ziv and Lempel, 1977]{Ziv77auniversal}
+Ziv, J. and Lempel, A. (1977).
 \newblock A universal algorithm for sequential data compression.
-\newblock {\em IEEE TRANSACTIONS ON INFORMATION THEORY 23}, 3 (1977), 337--343.
+\newblock {\em IEEE TRANSACTIONS ON INFORMATION THEORY}, 23(3):337--343.
 
 \end{thebibliography}
